@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: yusufkocak01/fizikadana
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Sayfalar"
+    files:
+      - file: "hakkimda.html"
+        label: "Hakkımızda"
+        name: "hakkimda"
+        fields:
+          - label: "Başlık"
+            name: "title"
+            widget: "string"
+            default: "Hakkımızda"
+          - label: "İçerik"
+            name: "body"
+            widget: "markdown"
