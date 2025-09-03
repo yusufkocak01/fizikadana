@@ -1,9 +1,12 @@
 backend:
   name: github
-  repo: yusufkocak01/fizikadana
+  repo: yusufkocak01/fizikadana   # GitHub repo adı
+  branch: main                    # İçerik hangi branch’te tutulacak
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
-media_folder: "images"
-public_folder: "/images"
+media_folder: "images"            # Dosyaların kaydedileceği klasör (repo içi)
+public_folder: "/images"          # Web’de kullanılacak yol
 
 collections:
   - name: "pages"
