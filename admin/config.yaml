@@ -11,12 +11,10 @@ collections:
     files:
       - file: "hakkimda.html"
         label: "Hakkımızda"
-        name: "hakkimda"
         fields:
           - label: "Başlık"
             name: "title"
             widget: "string"
-            default: "Hakkımızda"
           - label: "İçerik"
             name: "body"
             widget: "markdown"
