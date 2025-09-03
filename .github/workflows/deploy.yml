@@ -25,3 +25,4 @@ jobs:
           gsutil -m rsync -r ./ gs://fizikadana.com
         env:
           CLOUDSDK_CORE_PROJECT: Sitelerim
+          
