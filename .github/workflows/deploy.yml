@@ -11,10 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Remove .git folder
-        run: |
-          rm -rf .git
-
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v1
         with:
@@ -25,4 +21,3 @@ jobs:
           gsutil -m rsync -r ./ gs://fizikadana.com
         env:
           CLOUDSDK_CORE_PROJECT: Sitelerim
-          
