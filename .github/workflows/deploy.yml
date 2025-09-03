@@ -18,6 +18,6 @@ jobs:
 
       - name: Upload to GCS
         run: |
-          gsutil -m rsync -r -d --exclude='.git' ./ gs://fizikadana.com
+          gsutil -m rsync -r --exclude='.git' ./ gs://fizikadana.com
         env:
           CLOUDSDK_CORE_PROJECT: Sitelerim
