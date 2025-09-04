@@ -1,15 +1,20 @@
 backend:
   name: github
   repo: yusufkocak01/fizikadana
+  branch: main
+  # Github ile kimlik doğrulama için bir OAuth sunucusu gereklidir (bkz. Adım 5)
+  # base_url: https://<oauth-sunucun>
+  # auth_endpoint: /auth
 
-media_folder: "images"
-public_folder: "/images"
+media_folder: "images"      # repo içinde dosyalar
+public_folder: "/images"    # sitede görünecek yol
 
 collections:
   - name: "pages"
     label: "Sayfalar"
     files:
-      - file: "hakkimda.html"
+      - file: "hakkimda.md"     # .md kullanmak en kolayı
+        name: "hakkimda"        # ZORUNLU: benzersiz tanım
         label: "Hakkımızda"
         fields:
           - label: "Başlık"
